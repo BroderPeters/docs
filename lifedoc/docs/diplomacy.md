@@ -53,7 +53,7 @@
 
 ![IMG-20180114-WA0002.jpg](/images/IMG-20180114-WA0002.jpg)
 ![IMG-20180114-WA0004.jpg](/images/IMG-20180114-WA0004.jpg)
-![VID-20180114-WA0003.gif](/animations/VID-20180114-WA0003.gif)
+*Die Animation mit dem Titel "Geilste Front ever" musste aufgrund der Dateigröße entfernt werden.*
 
 ## ER-Modell
 ![ERModel_20180114.png](/images/ERModel_20180114.png "Skizziertes ER-Modell")
