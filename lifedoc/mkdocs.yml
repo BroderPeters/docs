@@ -1,1 +1,5 @@
 site_name: My LifeDoc
+pages:
+     - Home: index.md
+     - Diplomacy: diplomacy.md
+ 

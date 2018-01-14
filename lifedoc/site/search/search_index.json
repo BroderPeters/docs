@@ -3,7 +3,7 @@
         {
             "location": "/",
             "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
-            "title": "Welcome to MkDocs"
+            "title": "Home"
         },
         {
             "location": "/#welcome-to-mkdocs",
@@ -19,6 +19,36 @@
             "location": "/#project-layout",
             "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
             "title": "Project layout"
+        },
+        {
+            "location": "/diplomacy/",
+            "text": "14.01.2018 - Notizen\n\n\n\n\nProvinzfaktor (aktuell: 1,4 pro Provinz)\n\n\nHauptst\u00e4dte, Weltwunder = + 0,6\n\n\nProvinz mit Hauptstadt \nund\n Weltwunder = 1,4 + 0,6 + 0,6\n\n\n\n\n\n\n2/3 Provinzen eines Landes um dieses einzunehmen\n\n\nEreignisse: Beschreibung, Auswirkung in Form von +/- Gold, +/- Einheiten\n\n\nWeltereignisse (am Ende jeder vollen Runde): Beschreibung, Typ, Auswirkung in Form von +/- Gold, +/- Einheiten oder anderen f\u00fcr alle oder bestimmte Nationen\n\n\nZufallsw\u00fcrfel implementieren\n\n\nEinheiten k\u00f6nnen zu jedem Zeitpunkt verkauft werden\n\n\nMaximal drei Einheiten in einer Provinz/Schiff\n\n\nKampf gegen neutrale Provinz = (St\u00e4rke) n:2\n\n\nKampf gegen Spieler = n:m\n\n\nKein Heimvorteil (Kampf ein eigenem Land/eigener Provinz)\n\n\nHandel unter Spielern um Einheiten, Provinzen\n\n\nGold leihen unter Spielern mit Bedingungen\n\n\nfeste Runden-/Zugzeit\n\n\n\n\nEinheiten\u00fcbersicht\n\n\n\n    \n\n        \nEinheitentyp\n\n        \nKosten\n\n        \nSt\u00e4rke\n\n        \nReichweite\n\n    \n\n    \n\n        \nInfanterie\n\n        \n9\n\n        \n1\n\n        \n2\n\n    \n\n    \n\n        \nKavallerie\n\n        \n13\n\n        \n2\n\n        \n3\n\n    \n\n    \n\n        \nArtillerie\n\n        \n16\n\n        \n3\n\n        \n1\n\n    \n\n    \n\n        \nSchiff\n\n        \n29\n\n        \n1\n\n        \n1 Faden\n\n    \n\n\n\n\nEindr\u00fccke\n\n\n\n\n\n\n\n\nER-Modell\n\n\n\n\nBrainstorm\n\n\n\n\nLogging der Geschehnisse in Spielz\u00fcgen\n\n\nEinheiten k\u00f6nnen zu jedem Zeitpunkt verkauft werden (Popup/Benachrichtigung f\u00fcr Spielleiter)\n\n\nAndroid/iOS-App\n\n\nBrowserbasiert\n\n\nMessage Broker\n\n\nDatenbank\n\n\nEinplatinencomputer als Host mit lokalem Netzwerk",
+            "title": "Diplomacy"
+        },
+        {
+            "location": "/diplomacy/#14012018-notizen",
+            "text": "Provinzfaktor (aktuell: 1,4 pro Provinz)  Hauptst\u00e4dte, Weltwunder = + 0,6  Provinz mit Hauptstadt  und  Weltwunder = 1,4 + 0,6 + 0,6    2/3 Provinzen eines Landes um dieses einzunehmen  Ereignisse: Beschreibung, Auswirkung in Form von +/- Gold, +/- Einheiten  Weltereignisse (am Ende jeder vollen Runde): Beschreibung, Typ, Auswirkung in Form von +/- Gold, +/- Einheiten oder anderen f\u00fcr alle oder bestimmte Nationen  Zufallsw\u00fcrfel implementieren  Einheiten k\u00f6nnen zu jedem Zeitpunkt verkauft werden  Maximal drei Einheiten in einer Provinz/Schiff  Kampf gegen neutrale Provinz = (St\u00e4rke) n:2  Kampf gegen Spieler = n:m  Kein Heimvorteil (Kampf ein eigenem Land/eigener Provinz)  Handel unter Spielern um Einheiten, Provinzen  Gold leihen unter Spielern mit Bedingungen  feste Runden-/Zugzeit",
+            "title": "14.01.2018 - Notizen"
+        },
+        {
+            "location": "/diplomacy/#einheitenubersicht",
+            "text": "Einheitentyp \n         Kosten \n         St\u00e4rke \n         Reichweite \n     \n     \n         Infanterie \n         9 \n         1 \n         2 \n     \n     \n         Kavallerie \n         13 \n         2 \n         3 \n     \n     \n         Artillerie \n         16 \n         3 \n         1 \n     \n     \n         Schiff \n         29 \n         1 \n         1 Faden",
+            "title": "Einheiten\u00fcbersicht"
+        },
+        {
+            "location": "/diplomacy/#eindrucke",
+            "text": "",
+            "title": "Eindr\u00fccke"
+        },
+        {
+            "location": "/diplomacy/#er-modell",
+            "text": "",
+            "title": "ER-Modell"
+        },
+        {
+            "location": "/diplomacy/#brainstorm",
+            "text": "Logging der Geschehnisse in Spielz\u00fcgen  Einheiten k\u00f6nnen zu jedem Zeitpunkt verkauft werden (Popup/Benachrichtigung f\u00fcr Spielleiter)  Android/iOS-App  Browserbasiert  Message Broker  Datenbank  Einplatinencomputer als Host mit lokalem Netzwerk",
+            "title": "Brainstorm"
         }
     ]
 }
