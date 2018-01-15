@@ -68,3 +68,11 @@
 * Einplatinencomputer als Host mit lokalem Netzwerk
 
 * * *
+
+# 15.01.2018 - Wegesnotizen
+
+* Plattformunabhängig = webbasiert, lokal
+* Spielstand und initiale Spielkonfiguration müssen geladen werden können
+* Login für Spieler durch von Spieleleiter generiertem Passwort
+* dynamisches und manuelles Update der angezeigten Übersicht
+* Statistiken eines Spiels sammeln, eventuell an cloud.broderpeters.de für alle Spiele
