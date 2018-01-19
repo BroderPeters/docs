@@ -90,15 +90,76 @@
 
 * Startet und ?beendet? eine Runde (Spieler hat dennoch Zugzeit x, welche vom Spielleiter festgelegt wird
 
-## Randnotiz
+## Randnotizen
 
 * Maximal physisch vorhandene Einheiten eintragen und beachten
 
 * * *
 
-# 19.01.2018 Wegesnotizen
+# 19.01.2018 - Wegesnotizen
 
 * Fotografie des seitlichen Profils der Spielfiguren zur digitalen Abbildung
 * sich drehende Würfel --> bei Erhalt der Zufallszahl, Stop und Zahlen bezeihungsweise Summen anzeigen
 * Kampfergebnis mit Sound- und Bild-/Animationsuntermalung
-* Gebiete mit namen und abstand zu anderen gebieten --> neo4j
+* Provinzen mit Namen und Abstand zu anderen Provinzen --> neo4j?
+
+# 19.01.2018 - Notizen
+
+##Zugablauf
+1. *manuell*: Zugstart nach Freigabe durch Spielleiter
+2. *automatisch*: Kostenkalkulation
+	1. Kalkulation der Steuern anhand der Provinzen, Haupstädte und Weltwunder
+	2. Abzug offener Schulden
+	3. Auszahlung
+3. *manuell*: Kauf von Einheiten
+	1. Prüfung, ob und wie viele Einheiten gekauft werden können
+	2. Auswahl zu kaufender Einheiten
+		1. Hintergrundberechnung mit aktuellem Vermögen, ob und wie viele Einheiten gekauft werden können
+	3. Zusammenfassung ausgewählter Einheiten und Kosten
+	4. Kaufbestätigung
+	5. Einzahlung
+	6. Mitteilung an den Spielleiter
+	7. Setzen der gekauften Einheiten auf das Spielfeld
+		1. Prüfen des Zielfeldes auf maximale Einheiten
+4. *manuell*: Verkauf von Einheiten
+	1. Auflistung vorhandener Einheiten
+	2. Auswahl zu verkaufender Einheiten
+	3. Zusammenfassung ausgewählter Einheiten und Kosten
+	4. Verkaufsbestätigung
+	5. Auszahlung
+	6. Mitteilung an den Spielleiter
+	7. Entfernen der verkauften Einheiten vom Spielfeld
+5. *manuell*: Bewegen von Einheiten
+	1. Übersicht aller möglich zu bewegenden Einheiten
+	2. Auswahl der zu bewegenden Einheit(en)
+	3. Auswahl des Zielfeldes
+		1. Prüfen, ob Zielfeld gültigen Reichweite einhält
+		2. Prüfen des Zielfelde auf maximale Einheiten
+	4. Bestätigung durch den Spieler
+	5. Bewegen der Einheit(en)
+	6. Bestätigung durch den Spielleiter
+	7. Prüfung, ob auf Zielfeld gekämpft werden kann
+	8. Zusammenfassung der möglichen Kampfsituation (Kampfkraftverhältnis)
+	9. Bestätigung durch den Spieler, ob auf Zielfeld gekämpft werden soll
+	10. Kampfsimulation
+	11. Auswertung der Kampfsimulation
+		1. Mitteilung an den Spielleiter
+	12. Entfernen besiegter Einheiten
+	13. Zuordnung/Entfernen neuer Provinz
+	14. Bestätigung durch den Spieler
+	15. Bestätigung durch den Spielleiter
+6. *manuell*: Optionales Ziehen einer Ereigniskarte
+	1. Auswertung der Ereigniskarte
+	2. Bestätigung durch den Spieler
+7. *automatisch*: Beenden der Runde durch Erreichen der letzten Aktion oder Ablauf der Zugzeit
+
+## ER-Modell
+![ERModel_20170120.png](/images/ERModel_20170120.png "Skizziertes ER-Modell")
+
+## Randnotizen
+
+* Spielerreihenfolge wird durch Spielleiter festgelegt
+* Spieler können Einheiten nur in ihrem Zug und nur nach dem Kauf von Einheiten und vor der Bewegung von Einheiten verkaufen
+* Farbe des Spielers in Ecke einblenden
+* Anstatt Schulden --> Gold auch in Minusbereich
+* Maximale Einheiten pro Provinz --> Konfigurierbar

@@ -96,8 +96,12 @@
         <li class="main "><a href="#16012018-wegesnotizen">16.01.2018 - Wegesnotizen</a></li>
             <li><a href="#automatisierung-im-vergleich-zum-physischen-spielerlebnis">Automatisierung im Vergleich zum physischen Spielerlebnis</a></li>
             <li><a href="#spielleiter">Spielleiter</a></li>
-            <li><a href="#randnotiz">Randnotiz</a></li>
-        <li class="main "><a href="#19012018-wegesnotizen">19.01.2018 Wegesnotizen</a></li>
+            <li><a href="#randnotizen">Randnotizen</a></li>
+        <li class="main "><a href="#19012018-wegesnotizen">19.01.2018 - Wegesnotizen</a></li>
+        <li class="main "><a href="#19012018-notizen">19.01.2018 - Notizen</a></li>
+            <li><a href="#zugablauf">Zugablauf</a></li>
+            <li><a href="#er-modell_1">ER-Modell</a></li>
+            <li><a href="#randnotizen_1">Randnotizen</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -191,17 +195,95 @@
 <ul>
 <li>Startet und ?beendet? eine Runde (Spieler hat dennoch Zugzeit x, welche vom Spielleiter festgelegt wird</li>
 </ul>
-<h2 id="randnotiz">Randnotiz</h2>
+<h2 id="randnotizen">Randnotizen</h2>
 <ul>
 <li>Maximal physisch vorhandene Einheiten eintragen und beachten</li>
 </ul>
 <hr />
-<h1 id="19012018-wegesnotizen">19.01.2018 Wegesnotizen</h1>
+<h1 id="19012018-wegesnotizen">19.01.2018 - Wegesnotizen</h1>
 <ul>
 <li>Fotografie des seitlichen Profils der Spielfiguren zur digitalen Abbildung</li>
 <li>sich drehende Würfel --&gt; bei Erhalt der Zufallszahl, Stop und Zahlen bezeihungsweise Summen anzeigen</li>
 <li>Kampfergebnis mit Sound- und Bild-/Animationsuntermalung</li>
-<li>Gebiete mit namen und abstand zu anderen gebieten --&gt; neo4j</li>
+<li>Provinzen mit Namen und Abstand zu anderen Provinzen --&gt; neo4j?</li>
+</ul>
+<h1 id="19012018-notizen">19.01.2018 - Notizen</h1>
+<h2 id="zugablauf">Zugablauf</h2>
+<ol>
+<li><em>manuell</em>: Zugstart nach Freigabe durch Spielleiter</li>
+<li><em>automatisch</em>: Kostenkalkulation<ol>
+<li>Kalkulation der Steuern anhand der Provinzen, Haupstädte und Weltwunder</li>
+<li>Abzug offener Schulden</li>
+<li>Auszahlung</li>
+</ol>
+</li>
+<li><em>manuell</em>: Kauf von Einheiten<ol>
+<li>Prüfung, ob und wie viele Einheiten gekauft werden können</li>
+<li>Auswahl zu kaufender Einheiten<ol>
+<li>Hintergrundberechnung mit aktuellem Vermögen, ob und wie viele Einheiten gekauft werden können</li>
+</ol>
+</li>
+<li>Zusammenfassung ausgewählter Einheiten und Kosten</li>
+<li>Kaufbestätigung</li>
+<li>Einzahlung</li>
+<li>Mitteilung an den Spielleiter</li>
+<li>Setzen der gekauften Einheiten auf das Spielfeld<ol>
+<li>Prüfen des Zielfeldes auf maximale Einheiten</li>
+</ol>
+</li>
+</ol>
+</li>
+<li><em>manuell</em>: Verkauf von Einheiten<ol>
+<li>Auflistung vorhandener Einheiten</li>
+<li>Auswahl zu verkaufender Einheiten</li>
+<li>Zusammenfassung ausgewählter Einheiten und Kosten</li>
+<li>Verkaufsbestätigung</li>
+<li>Auszahlung</li>
+<li>Mitteilung an den Spielleiter</li>
+<li>Entfernen der verkauften Einheiten vom Spielfeld</li>
+</ol>
+</li>
+<li><em>manuell</em>: Bewegen von Einheiten<ol>
+<li>Übersicht aller möglich zu bewegenden Einheiten</li>
+<li>Auswahl der zu bewegenden Einheit(en)</li>
+<li>Auswahl des Zielfeldes<ol>
+<li>Prüfen, ob Zielfeld gültigen Reichweite einhält</li>
+<li>Prüfen des Zielfelde auf maximale Einheiten</li>
+</ol>
+</li>
+<li>Bestätigung durch den Spieler</li>
+<li>Bewegen der Einheit(en)</li>
+<li>Bestätigung durch den Spielleiter</li>
+<li>Prüfung, ob auf Zielfeld gekämpft werden kann</li>
+<li>Zusammenfassung der möglichen Kampfsituation (Kampfkraftverhältnis)</li>
+<li>Bestätigung durch den Spieler, ob auf Zielfeld gekämpft werden soll</li>
+<li>Kampfsimulation</li>
+<li>Auswertung der Kampfsimulation<ol>
+<li>Mitteilung an den Spielleiter</li>
+</ol>
+</li>
+<li>Entfernen besiegter Einheiten</li>
+<li>Zuordnung/Entfernen neuer Provinz</li>
+<li>Bestätigung durch den Spieler</li>
+<li>Bestätigung durch den Spielleiter</li>
+</ol>
+</li>
+<li><em>manuell</em>: Optionales Ziehen einer Ereigniskarte<ol>
+<li>Auswertung der Ereigniskarte</li>
+<li>Bestätigung durch den Spieler</li>
+</ol>
+</li>
+<li><em>automatisch</em>: Beenden der Runde durch Erreichen der letzten Aktion oder Ablauf der Zugzeit</li>
+</ol>
+<h2 id="er-modell_1">ER-Modell</h2>
+<p><img alt="ERModel_20170120.png" src="../../images/ERModel_20170120.png" title="Skizziertes ER-Modell" /></p>
+<h2 id="randnotizen_1">Randnotizen</h2>
+<ul>
+<li>Spielerreihenfolge wird durch Spielleiter festgelegt</li>
+<li>Spieler können Einheiten nur in ihrem Zug und nur nach dem Kauf von Einheiten und vor der Bewegung von Einheiten verkaufen</li>
+<li>Farbe des Spielers in Ecke einblenden</li>
+<li>Anstatt Schulden --&gt; Gold auch in Minusbereich</li>
+<li>Maximale Einheiten pro Provinz --&gt; Konfigurierbar</li>
 </ul></div>
         </div>
 
