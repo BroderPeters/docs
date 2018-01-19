@@ -7,21 +7,21 @@
         
         
         
-        <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Diplomacy - My LifeDoc</title>
-        <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
-        <link href="../css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="../css/highlight.css">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>Konzept - My LifeDoc</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
             <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
         <![endif]-->
 
-        <script src="../js/jquery-1.10.2.min.js"></script>
-        <script src="../js/bootstrap-3.0.3.min.js"></script>
-        <script src="../js/highlight.pack.js"></script> 
+        <script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
     </head>
 
     <body>
@@ -38,7 +38,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="..">My LifeDoc</a>
+            <a class="navbar-brand" href="../..">My LifeDoc</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -46,10 +46,20 @@
                 <!-- Main navigation -->
                 <ul class="nav navbar-nav">
                     <li >
-                        <a href="..">Home</a>
+                        <a href="../..">Home</a>
                     </li>
-                    <li class="active">
-                        <a href="./">Diplomacy</a>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Diplomacy <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../notes/">Notizen</a>
+</li>
+                            
+<li class="active">
+    <a href="./">Konzept</a>
+</li>
+                        </ul>
                     </li>
                 </ul>
 
@@ -60,7 +70,7 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="..">
+                        <a rel="next" href="../notes/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
@@ -77,104 +87,21 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#14012018-notizen">14.01.2018 - Notizen</a></li>
-            <li><a href="#einheitenubersicht">Einheitenübersicht</a></li>
-            <li><a href="#eindrucke">Eindrücke</a></li>
-            <li><a href="#er-modell">ER-Modell</a></li>
-            <li><a href="#brainstorm">Brainstorm</a></li>
-        <li class="main "><a href="#15012018-wegesnotizen">15.01.2018 - Wegesnotizen</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="14012018-notizen">14.01.2018 - Notizen</h1>
-<ul>
-<li>Provinzfaktor (aktuell: 1,4 pro Provinz)</li>
-<li>Hauptstädte, Weltwunder = + 0,6<ul>
-<li>Provinz mit Hauptstadt <strong>und</strong> Weltwunder = 1,4 + 0,6 + 0,6</li>
-</ul>
-</li>
-<li>2/3 Provinzen eines Landes um dieses einzunehmen</li>
-<li>Ereignisse: Beschreibung, Auswirkung in Form von +/- Gold, +/- Einheiten</li>
-<li>Weltereignisse (am Ende jeder vollen Runde): Beschreibung, Typ, Auswirkung in Form von +/- Gold, +/- Einheiten oder anderen für alle oder bestimmte Nationen</li>
-<li>Zufallswürfel implementieren</li>
-<li>Einheiten können zu jedem Zeitpunkt verkauft werden</li>
-<li>Maximal drei Einheiten in einer Provinz/Schiff</li>
-<li>Kampf gegen neutrale Provinz = (Stärke) n:2</li>
-<li>Kampf gegen Spieler = n:m</li>
-<li>Kein Heimvorteil (Kampf ein eigenem Land/eigener Provinz)</li>
-<li>Handel unter Spielern um Einheiten, Provinzen</li>
-<li>Gold leihen unter Spielern mit Bedingungen</li>
-<li>feste Runden-/Zugzeit</li>
-</ul>
-<h2 id="einheitenubersicht">Einheitenübersicht</h2>
-<p><table>
-    <tr>
-        <th>Einheitentyp</th>
-        <th>Kosten</th>
-        <th>Stärke</th>
-        <th>Reichweite</th>
-    </tr>
-    <tr>
-        <td>Infanterie</td>
-        <td>9</td>
-        <td>1</td>
-        <td>2</td>
-    </tr>
-    <tr>
-        <td>Kavallerie</td>
-        <td>13</td>
-        <td>2</td>
-        <td>3</td>
-    </tr>
-    <tr>
-        <td>Artillerie</td>
-        <td>16</td>
-        <td>3</td>
-        <td>1</td>
-    </tr>
-    <tr>
-        <td>Schiff</td>
-        <td>29</td>
-        <td>1</td>
-        <td>1 Faden</td>
-    </tr>
-</table></p>
-<h2 id="eindrucke">Eindrücke</h2>
-<p><img alt="IMG-20180114-WA0002.jpg" src="../images/IMG-20180114-WA0002.jpg" />
-<img alt="IMG-20180114-WA0004.jpg" src="../images/IMG-20180114-WA0004.jpg" />
-<em>Die Animation mit dem Titel "Geilste Front ever" musste aufgrund der Dateigröße entfernt werden.</em></p>
-<h2 id="er-modell">ER-Modell</h2>
-<p><img alt="ERModel_20180114.png" src="../images/ERModel_20180114.png" title="Skizziertes ER-Modell" /></p>
-<h2 id="brainstorm">Brainstorm</h2>
-<ul>
-<li>Logging der Geschehnisse in Spielzügen</li>
-<li>Einheiten können zu jedem Zeitpunkt verkauft werden (Popup/Benachrichtigung für Spielleiter)</li>
-<li>Android/iOS-App</li>
-<li>Browserbasiert</li>
-<li>Message Broker</li>
-<li>Datenbank</li>
-<li>Einplatinencomputer als Host mit lokalem Netzwerk</li>
-</ul>
-<hr />
-<h1 id="15012018-wegesnotizen">15.01.2018 - Wegesnotizen</h1>
-<ul>
-<li>Plattformunabhängig = webbasiert, lokal</li>
-<li>Spielstand und initiale Spielkonfiguration müssen geladen werden können</li>
-<li>Login für Spieler durch von Spieleleiter generiertem Passwort</li>
-<li>dynamisches und manuelles Update der angezeigten Übersicht</li>
-<li>Statistiken eines Spiels sammeln, eventuell an cloud.broderpeters.de für alle Spiele</li>
-</ul></div>
+</div>
         </div>
 
         <footer class="col-md-12">
             <hr>
             <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
         </footer>
-        <script>var base_url = '..';</script>
-        <script src="../js/base.js"></script>
-        <script src="../search/require.js"></script>
-        <script src="../search/search.js"></script>
+        <script>var base_url = '../..';</script>
+        <script src="../../js/base.js"></script>
+        <script src="../../search/require.js"></script>
+        <script src="../../search/search.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
     <div class="modal-dialog">

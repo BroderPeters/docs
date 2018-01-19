@@ -21,39 +21,69 @@
             "title": "Project layout"
         },
         {
-            "location": "/diplomacy/",
-            "text": "14.01.2018 - Notizen\n\n\n\n\nProvinzfaktor (aktuell: 1,4 pro Provinz)\n\n\nHauptst\u00e4dte, Weltwunder = + 0,6\n\n\nProvinz mit Hauptstadt \nund\n Weltwunder = 1,4 + 0,6 + 0,6\n\n\n\n\n\n\n2/3 Provinzen eines Landes um dieses einzunehmen\n\n\nEreignisse: Beschreibung, Auswirkung in Form von +/- Gold, +/- Einheiten\n\n\nWeltereignisse (am Ende jeder vollen Runde): Beschreibung, Typ, Auswirkung in Form von +/- Gold, +/- Einheiten oder anderen f\u00fcr alle oder bestimmte Nationen\n\n\nZufallsw\u00fcrfel implementieren\n\n\nEinheiten k\u00f6nnen zu jedem Zeitpunkt verkauft werden\n\n\nMaximal drei Einheiten in einer Provinz/Schiff\n\n\nKampf gegen neutrale Provinz = (St\u00e4rke) n:2\n\n\nKampf gegen Spieler = n:m\n\n\nKein Heimvorteil (Kampf ein eigenem Land/eigener Provinz)\n\n\nHandel unter Spielern um Einheiten, Provinzen\n\n\nGold leihen unter Spielern mit Bedingungen\n\n\nfeste Runden-/Zugzeit\n\n\n\n\nEinheiten\u00fcbersicht\n\n\n\n    \n\n        \nEinheitentyp\n\n        \nKosten\n\n        \nSt\u00e4rke\n\n        \nReichweite\n\n    \n\n    \n\n        \nInfanterie\n\n        \n9\n\n        \n1\n\n        \n2\n\n    \n\n    \n\n        \nKavallerie\n\n        \n13\n\n        \n2\n\n        \n3\n\n    \n\n    \n\n        \nArtillerie\n\n        \n16\n\n        \n3\n\n        \n1\n\n    \n\n    \n\n        \nSchiff\n\n        \n29\n\n        \n1\n\n        \n1 Faden\n\n    \n\n\n\n\nEindr\u00fccke\n\n\n\n\n\n\nDie Animation mit dem Titel \"Geilste Front ever\" musste aufgrund der Dateigr\u00f6\u00dfe entfernt werden.\n\n\nER-Modell\n\n\n\n\nBrainstorm\n\n\n\n\nLogging der Geschehnisse in Spielz\u00fcgen\n\n\nEinheiten k\u00f6nnen zu jedem Zeitpunkt verkauft werden (Popup/Benachrichtigung f\u00fcr Spielleiter)\n\n\nAndroid/iOS-App\n\n\nBrowserbasiert\n\n\nMessage Broker\n\n\nDatenbank\n\n\nEinplatinencomputer als Host mit lokalem Netzwerk\n\n\n\n\n\n\n15.01.2018 - Wegesnotizen\n\n\n\n\nPlattformunabh\u00e4ngig = webbasiert, lokal\n\n\nSpielstand und initiale Spielkonfiguration m\u00fcssen geladen werden k\u00f6nnen\n\n\nLogin f\u00fcr Spieler durch von Spieleleiter generiertem Passwort\n\n\ndynamisches und manuelles Update der angezeigten \u00dcbersicht\n\n\nStatistiken eines Spiels sammeln, eventuell an cloud.broderpeters.de f\u00fcr alle Spiele",
-            "title": "Diplomacy"
+            "location": "/diplomacy/notes/",
+            "text": "14.01.2018 - Notizen\n\n\n\n\nProvinzfaktor (aktuell: 1,4 pro Provinz)\n\n\nHauptst\u00e4dte, Weltwunder = + 0,6\n\n\nProvinz mit Hauptstadt \nund\n Weltwunder = 1,4 + 0,6 + 0,6\n\n\n\n\n\n\n2/3 Provinzen eines Landes um dieses einzunehmen\n\n\nEreignisse: Beschreibung, Auswirkung in Form von +/- Gold, +/- Einheiten\n\n\nWeltereignisse (am Ende jeder vollen Runde): Beschreibung, Typ, Auswirkung in Form von +/- Gold, +/- Einheiten oder anderen f\u00fcr alle oder bestimmte Nationen\n\n\nZufallsw\u00fcrfel implementieren\n\n\nEinheiten k\u00f6nnen zu jedem Zeitpunkt verkauft werden\n\n\nMaximal drei Einheiten in einer Provinz/Schiff\n\n\nKampf gegen neutrale Provinz = (St\u00e4rke) n:2\n\n\nKampf gegen Spieler = n:m\n\n\nKein Heimvorteil (Kampf ein eigenem Land/eigener Provinz)\n\n\nHandel unter Spielern um Einheiten, Provinzen\n\n\nGold leihen unter Spielern mit Bedingungen\n\n\nfeste Runden-/Zugzeit\n\n\n\n\nEinheiten\u00fcbersicht\n\n\n\n    \n\n        \nEinheitentyp\n\n        \nKosten\n\n        \nSt\u00e4rke\n\n        \nReichweite\n\n    \n\n    \n\n        \nInfanterie\n\n        \n9\n\n        \n1\n\n        \n2\n\n    \n\n    \n\n        \nKavallerie\n\n        \n13\n\n        \n2\n\n        \n3\n\n    \n\n    \n\n        \nArtillerie\n\n        \n16\n\n        \n3\n\n        \n1\n\n    \n\n    \n\n        \nSchiff\n\n        \n29\n\n        \n1\n\n        \n1 Faden\n\n    \n\n\n\n\nEindr\u00fccke\n\n\n\n\n\n\nDie Animation mit dem Titel \"Geilste Front ever\" musste aufgrund der Dateigr\u00f6\u00dfe entfernt werden.\n\n\nER-Modell\n\n\n\n\nBrainstorm\n\n\n\n\nLogging der Geschehnisse in Spielz\u00fcgen\n\n\nEinheiten k\u00f6nnen zu jedem Zeitpunkt verkauft werden (Popup/Benachrichtigung f\u00fcr Spielleiter)\n\n\nAndroid/iOS-App\n\n\nBrowserbasiert\n\n\nMessage Broker\n\n\nDatenbank\n\n\nEinplatinencomputer als Host mit lokalem Netzwerk\n\n\n\n\n\n\n15.01.2018 - Wegesnotizen\n\n\n\n\nPlattformunabh\u00e4ngig = webbasiert, lokal\n\n\nSpielstand und initiale Spielkonfiguration m\u00fcssen geladen werden k\u00f6nnen\n\n\nLogin f\u00fcr Spieler durch von Spieleleiter generiertem Passwort\n\n\ndynamisches und manuelles Update der angezeigten \u00dcbersicht\n\n\nStatistiken eines Spiels sammeln, eventuell an cloud.broderpeters.de f\u00fcr alle Spiele\n\n\n\n\n\n\n16.01.2018 - Wegesnotizen\n\n\nAutomatisierung im Vergleich zum physischen Spielerlebnis\n\n\n\n\nGold auszahlen und abrechnen\n\n\nKampfsimulation,  n:m: Vergleich der Summe von n zufallsgenerierten Zahlen mit der Summe von m zufallsgenerierten Zahlen\n\n\n\n\nSpielleiter\n\n\n\n\nStartet und ?beendet? eine Runde (Spieler hat dennoch Zugzeit x, welche vom Spielleiter festgelegt wird\n\n\n\n\nRandnotiz\n\n\n\n\nMaximal physisch vorhandene Einheiten eintragen und beachten\n\n\n\n\n\n\n19.01.2018 Wegesnotizen\n\n\n\n\nFotografie des seitlichen Profils der Spielfiguren zur digitalen Abbildung\n\n\nsich drehende W\u00fcrfel --> bei Erhalt der Zufallszahl, Stop und Zahlen bezeihungsweise Summen anzeigen\n\n\nKampfergebnis mit Sound- und Bild-/Animationsuntermalung\n\n\nGebiete mit namen und abstand zu anderen gebieten --> neo4j",
+            "title": "Notizen"
         },
         {
-            "location": "/diplomacy/#14012018-notizen",
+            "location": "/diplomacy/notes/#14012018-notizen",
             "text": "Provinzfaktor (aktuell: 1,4 pro Provinz)  Hauptst\u00e4dte, Weltwunder = + 0,6  Provinz mit Hauptstadt  und  Weltwunder = 1,4 + 0,6 + 0,6    2/3 Provinzen eines Landes um dieses einzunehmen  Ereignisse: Beschreibung, Auswirkung in Form von +/- Gold, +/- Einheiten  Weltereignisse (am Ende jeder vollen Runde): Beschreibung, Typ, Auswirkung in Form von +/- Gold, +/- Einheiten oder anderen f\u00fcr alle oder bestimmte Nationen  Zufallsw\u00fcrfel implementieren  Einheiten k\u00f6nnen zu jedem Zeitpunkt verkauft werden  Maximal drei Einheiten in einer Provinz/Schiff  Kampf gegen neutrale Provinz = (St\u00e4rke) n:2  Kampf gegen Spieler = n:m  Kein Heimvorteil (Kampf ein eigenem Land/eigener Provinz)  Handel unter Spielern um Einheiten, Provinzen  Gold leihen unter Spielern mit Bedingungen  feste Runden-/Zugzeit",
             "title": "14.01.2018 - Notizen"
         },
         {
-            "location": "/diplomacy/#einheitenubersicht",
+            "location": "/diplomacy/notes/#einheitenubersicht",
             "text": "Einheitentyp \n         Kosten \n         St\u00e4rke \n         Reichweite \n     \n     \n         Infanterie \n         9 \n         1 \n         2 \n     \n     \n         Kavallerie \n         13 \n         2 \n         3 \n     \n     \n         Artillerie \n         16 \n         3 \n         1 \n     \n     \n         Schiff \n         29 \n         1 \n         1 Faden",
             "title": "Einheiten\u00fcbersicht"
         },
         {
-            "location": "/diplomacy/#eindrucke",
+            "location": "/diplomacy/notes/#eindrucke",
             "text": "Die Animation mit dem Titel \"Geilste Front ever\" musste aufgrund der Dateigr\u00f6\u00dfe entfernt werden.",
             "title": "Eindr\u00fccke"
         },
         {
-            "location": "/diplomacy/#er-modell",
+            "location": "/diplomacy/notes/#er-modell",
             "text": "",
             "title": "ER-Modell"
         },
         {
-            "location": "/diplomacy/#brainstorm",
+            "location": "/diplomacy/notes/#brainstorm",
             "text": "Logging der Geschehnisse in Spielz\u00fcgen  Einheiten k\u00f6nnen zu jedem Zeitpunkt verkauft werden (Popup/Benachrichtigung f\u00fcr Spielleiter)  Android/iOS-App  Browserbasiert  Message Broker  Datenbank  Einplatinencomputer als Host mit lokalem Netzwerk",
             "title": "Brainstorm"
         },
         {
-            "location": "/diplomacy/#15012018-wegesnotizen",
+            "location": "/diplomacy/notes/#15012018-wegesnotizen",
             "text": "Plattformunabh\u00e4ngig = webbasiert, lokal  Spielstand und initiale Spielkonfiguration m\u00fcssen geladen werden k\u00f6nnen  Login f\u00fcr Spieler durch von Spieleleiter generiertem Passwort  dynamisches und manuelles Update der angezeigten \u00dcbersicht  Statistiken eines Spiels sammeln, eventuell an cloud.broderpeters.de f\u00fcr alle Spiele",
             "title": "15.01.2018 - Wegesnotizen"
+        },
+        {
+            "location": "/diplomacy/notes/#16012018-wegesnotizen",
+            "text": "",
+            "title": "16.01.2018 - Wegesnotizen"
+        },
+        {
+            "location": "/diplomacy/notes/#automatisierung-im-vergleich-zum-physischen-spielerlebnis",
+            "text": "Gold auszahlen und abrechnen  Kampfsimulation,  n:m: Vergleich der Summe von n zufallsgenerierten Zahlen mit der Summe von m zufallsgenerierten Zahlen",
+            "title": "Automatisierung im Vergleich zum physischen Spielerlebnis"
+        },
+        {
+            "location": "/diplomacy/notes/#spielleiter",
+            "text": "Startet und ?beendet? eine Runde (Spieler hat dennoch Zugzeit x, welche vom Spielleiter festgelegt wird",
+            "title": "Spielleiter"
+        },
+        {
+            "location": "/diplomacy/notes/#randnotiz",
+            "text": "Maximal physisch vorhandene Einheiten eintragen und beachten",
+            "title": "Randnotiz"
+        },
+        {
+            "location": "/diplomacy/notes/#19012018-wegesnotizen",
+            "text": "Fotografie des seitlichen Profils der Spielfiguren zur digitalen Abbildung  sich drehende W\u00fcrfel --> bei Erhalt der Zufallszahl, Stop und Zahlen bezeihungsweise Summen anzeigen  Kampfergebnis mit Sound- und Bild-/Animationsuntermalung  Gebiete mit namen und abstand zu anderen gebieten --> neo4j",
+            "title": "19.01.2018 Wegesnotizen"
+        },
+        {
+            "location": "/diplomacy/concept/",
+            "text": "",
+            "title": "Konzept"
         }
     ]
 }

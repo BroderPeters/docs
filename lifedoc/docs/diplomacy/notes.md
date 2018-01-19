@@ -76,3 +76,29 @@
 * Login für Spieler durch von Spieleleiter generiertem Passwort
 * dynamisches und manuelles Update der angezeigten Übersicht
 * Statistiken eines Spiels sammeln, eventuell an cloud.broderpeters.de für alle Spiele
+
+* * *
+
+# 16.01.2018 - Wegesnotizen
+
+## Automatisierung im Vergleich zum physischen Spielerlebnis
+
+* Gold auszahlen und abrechnen
+* Kampfsimulation,  n:m: Vergleich der Summe von n zufallsgenerierten Zahlen mit der Summe von m zufallsgenerierten Zahlen
+
+## Spielleiter
+
+* Startet und ?beendet? eine Runde (Spieler hat dennoch Zugzeit x, welche vom Spielleiter festgelegt wird
+
+## Randnotiz
+
+* Maximal physisch vorhandene Einheiten eintragen und beachten
+
+* * *
+
+# 19.01.2018 Wegesnotizen
+
+* Fotografie des seitlichen Profils der Spielfiguren zur digitalen Abbildung
+* sich drehende Würfel --> bei Erhalt der Zufallszahl, Stop und Zahlen bezeihungsweise Summen anzeigen
+* Kampfergebnis mit Sound- und Bild-/Animationsuntermalung
+* Gebiete mit namen und abstand zu anderen gebieten --> neo4j
