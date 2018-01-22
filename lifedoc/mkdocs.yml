@@ -2,6 +2,8 @@ site_name: My LifeDoc
 pages:
      - Home: index.md
      - Diplomacy: 
-         - Notizen: diplomacy/notes.md
-         - Konzept: diplomacy/concept.md
- 
+         - 'Notizen': 'diplomacy/notes.md'
+         - 'Konzept': 'diplomacy/concept.md'
+     - Informatics:
+         - 'RabbitMQ': 'informatics/rabbitmq.md'
+         - 'Neo4j': 'informatics/neo4j.md'

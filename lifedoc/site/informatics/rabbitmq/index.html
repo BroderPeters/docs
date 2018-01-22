@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Konzept - My LifeDoc</title>
+        <title>RabbitMQ - My LifeDoc</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -48,29 +48,29 @@
                     <li >
                         <a href="../..">Home</a>
                     </li>
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Diplomacy <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
 <li >
-    <a href="../notes/">Notizen</a>
+    <a href="../../diplomacy/notes/">Notizen</a>
 </li>
                             
-<li class="active">
-    <a href="./">Konzept</a>
+<li >
+    <a href="../../diplomacy/concept/">Konzept</a>
 </li>
                         </ul>
                     </li>
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Informatics <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             
-<li >
-    <a href="../../informatics/rabbitmq/">RabbitMQ</a>
+<li class="active">
+    <a href="./">RabbitMQ</a>
 </li>
                             
 <li >
-    <a href="../../informatics/neo4j/">Neo4j</a>
+    <a href="../neo4j/">Neo4j</a>
 </li>
                         </ul>
                     </li>
@@ -83,12 +83,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../notes/">
+                        <a rel="next" href="../../diplomacy/concept/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../../informatics/rabbitmq/">
+                        <a rel="prev" href="../neo4j/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -100,11 +100,52 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#rabbitmq">RabbitMQ</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#heartbeats">Heartbeats</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-</div>
+<h1 id="rabbitmq">RabbitMQ</h1>
+<h2 id="about">About</h2>
+<p>TODO</p>
+<hr />
+<h2 id="heartbeats">Heartbeats</h2>
+<ul>
+<li>feature from AMQP 0-9-1</li>
+<li>ensures that the application layer promptly finds out about disrupted connecitons and unresponsive peers</li>
+<li>defend against termination of "idle" (when there's no activity for a certain period of time) TCP connections</li>
+</ul>
+<h3 id="timeout-interval">Timeout interval</h3>
+<p><a href="https://www.rabbitmq.com/heartbeats.html">Source</a></p>
+<ul>
+<li>defines after what period of time the TCP conncection should be considered unreachable by RabbitMQ and client libraries</li>
+<li>in secounds (default: <code>60</code>)</li>
+<li>disable: <code>0</code> (not recommended)</li>
+<li>value is negotiated between client and RabbitMQ server at time of connection<ul>
+<li>if server has non-zero configuration --&gt; client can only lower value</li>
+</ul>
+</li>
+<li>client must be <strong>configured to request heartbeats</strong><ul>
+<li>>= <code>version 3.0</code>: broker attempts to negotiate heartbeats by default</li>
+</ul>
+</li>
+<li>are sent every <code>timeout / 2</code></li>
+<li>two missed heartbeats --&gt; unreachable --&gt; TCP connection will be closed</li>
+<li>client detects that RabbitMQ node is unreachable due a heartbeat --&gt; needs to re-connect<blockquote>
+<p>Setting heartbeat timeout value too low can lead to false positives (peer being considered unavailable while it really isn't the case) due to transient network congestion, short-lived server flow control, and so on. This should be taken into consideration when picking a timeout value.</p>
+</blockquote>
+</li>
+<li>any traffic (e.g. protocol operations, published messages, acknowledgements) == valid heartbeat<ul>
+<li>sometimes sends heartbeat frames whether there was any other traffic, some only do it when necessary </li>
+</ul>
+</li>
+</ul>
+<h4 id="net">.Net</h4>
+<pre><code>ConnectionFactory connectionFactory = new ConnectionFactory();
+connectionFactory.RequestedHeartbeat = 60;
+</code></pre></div>
         </div>
 
         <footer class="col-md-12">
