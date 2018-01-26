@@ -2,13 +2,18 @@
     "docs": [
         {
             "location": "/",
-            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
+            "text": "Welcome to MkDocs\n\n\nFor full documentation visit \nmkdocs.org\n.\n\n\nPurpose\n\n\nTo summerize the purpose of this site: \n\n\n\n\nI needed something to get rid of my forgetfulness and usual \"going-straigth-to-the-goal-without-nowing-what-you-did-and-what-it-does\" type of working/getting into things. - \nBroder Peters, 27th January 2018, 12:01AM (UTC+1)\n\n\n\n\nFirst I thought about just writing stuff on paper. But paper isn't eternal and I need to carry it around all the time.\nRegarding this consideration I decided to use a sort of online documentation tool to catch my stuff up.\n\n\nCommands\n\n\n\n\nmkdocs new [dir-name]\n - Create a new project.\n\n\nmkdocs serve\n - Start the live-reloading docs server.\n\n\nmkdocs build\n - Build the documentation site.\n\n\nmkdocs help\n - Print this help message.\n\n\n\n\nProject layout\n\n\nmkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.",
             "title": "Home"
         },
         {
             "location": "/#welcome-to-mkdocs",
             "text": "For full documentation visit  mkdocs.org .",
             "title": "Welcome to MkDocs"
+        },
+        {
+            "location": "/#purpose",
+            "text": "To summerize the purpose of this site:    I needed something to get rid of my forgetfulness and usual \"going-straigth-to-the-goal-without-nowing-what-you-did-and-what-it-does\" type of working/getting into things. -  Broder Peters, 27th January 2018, 12:01AM (UTC+1)   First I thought about just writing stuff on paper. But paper isn't eternal and I need to carry it around all the time.\nRegarding this consideration I decided to use a sort of online documentation tool to catch my stuff up.",
+            "title": "Purpose"
         },
         {
             "location": "/#commands",
@@ -142,7 +147,7 @@
         },
         {
             "location": "/setupandconfiguration/mkdocs/",
-            "text": "Installation\n\n\nSource\n\n\nInstall Python\n\n\n\n\nDownload and install \nlatest Python version\n\n\nAdd Python to your PATH (usually default installer option on windows)\n\n\nIf not, use \nWIN\n + \nPause\n --> Advanced Settings --> Environment variables and add your python installation path to the \nPATH\n variable\n\n\nAlso add your \n\\Scripts\n folder to the \nPATH\n variable\n\n\n\n\n\n\n\n\nInstall Python Package Manager\n\n\n\n\nUsually installed with recent version of Python\n\n\nCheck for updates \npip install -U pip\n\n\n\n\nInstall MkDocs using pip\n\n\n\n\npip install mkdocs",
+            "text": "Installation\n\n\nSource\n\n\nInstall Python\n\n\n\n\nDownload and install \nlatest Python version\n\n\nAdd Python to your PATH (usually default installer option on windows)\n\n\nIf not, use \nWIN\n + \nPause\n --> Advanced Settings --> Environment variables and add your python installation path to the \nPATH\n variable\n\n\nAlso add your \n\\Scripts\n folder to the \nPATH\n variable\n\n\n\n\nInstall Python Package Manager\n\n\n\n\n\n\nUsually installed with recent version of Python\n\n\n\n\n\n\nCheck for updates \npip install -U pip\n\n\n\n\n\n\nInstall MkDocs using pip\n\n\n\n\npip install mkdocs",
             "title": "MkDocs"
         },
         {
@@ -157,7 +162,7 @@
         },
         {
             "location": "/setupandconfiguration/mkdocs/#install-python-package-manager",
-            "text": "Usually installed with recent version of Python  Check for updates  pip install -U pip",
+            "text": "Usually installed with recent version of Python    Check for updates  pip install -U pip",
             "title": "Install Python Package Manager"
         },
         {
