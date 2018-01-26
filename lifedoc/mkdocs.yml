@@ -7,3 +7,5 @@ pages:
      - Informatics:
          - 'RabbitMQ': 'informatics/rabbitmq.md'
          - 'Neo4j': 'informatics/neo4j.md'
+     - Setup and Configuration:
+         - 'MkDocs': 'setupandconfiguration/mkdocs.md'

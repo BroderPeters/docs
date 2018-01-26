@@ -139,6 +139,31 @@
             "location": "/informatics/neo4j/",
             "text": "",
             "title": "Neo4j"
+        },
+        {
+            "location": "/setupandconfiguration/mkdocs/",
+            "text": "Installation\n\n\nSource\n\n\nInstall Python\n\n\n\n\nDownload and install \nlatest Python version\n\n\nAdd Python to your PATH (usually default installer option on windows)\n\n\nIf not, use \nWIN\n + \nPause\n --> Advanced Settings --> Environment variables and add your python installation path to the \nPATH\n variable\n\n\nAlso add your \n\\Scripts\n folder to the \nPATH\n variable\n\n\n\n\n\n\n\n\nInstall Python Package Manager\n\n\n\n\nUsually installed with recent version of Python\n\n\nCheck for updates \npip install -U pip\n\n\n\n\nInstall MkDocs using pip\n\n\n\n\npip install mkdocs",
+            "title": "MkDocs"
+        },
+        {
+            "location": "/setupandconfiguration/mkdocs/#installation",
+            "text": "Source",
+            "title": "Installation"
+        },
+        {
+            "location": "/setupandconfiguration/mkdocs/#install-python",
+            "text": "Download and install  latest Python version  Add Python to your PATH (usually default installer option on windows)  If not, use  WIN  +  Pause  --> Advanced Settings --> Environment variables and add your python installation path to the  PATH  variable  Also add your  \\Scripts  folder to the  PATH  variable",
+            "title": "Install Python"
+        },
+        {
+            "location": "/setupandconfiguration/mkdocs/#install-python-package-manager",
+            "text": "Usually installed with recent version of Python  Check for updates  pip install -U pip",
+            "title": "Install Python Package Manager"
+        },
+        {
+            "location": "/setupandconfiguration/mkdocs/#install-mkdocs-using-pip",
+            "text": "pip install mkdocs",
+            "title": "Install MkDocs using pip"
         }
     ]
 }
