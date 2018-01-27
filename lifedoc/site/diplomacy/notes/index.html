@@ -124,6 +124,10 @@
             <li><a href="#zugablauf">Zugablauf</a></li>
             <li><a href="#er-modell_1">ER-Modell</a></li>
             <li><a href="#randnotizen_1">Randnotizen</a></li>
+        <li class="main "><a href="#28012018-notizen">28.01.2018 - Notizen</a></li>
+            <li><a href="#infrastrukturzustandigkeiten">Infrastruktur|Zuständigkeiten</a></li>
+            <li><a href="#interaktionen-und-informationen-frontenddesign">Interaktionen und Informationen --&gt; Frontenddesign</a></li>
+            <li><a href="#randnotizen_2">Randnotizen</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
@@ -149,7 +153,7 @@
 <li>feste Runden-/Zugzeit</li>
 </ul>
 <h2 id="einheitenubersicht">Einheitenübersicht</h2>
-<p><table>
+<table>
     <tr>
         <th>Einheitentyp</th>
         <th>Kosten</th>
@@ -180,7 +184,8 @@
         <td>1</td>
         <td>1 Faden</td>
     </tr>
-</table></p>
+</table>
+
 <h2 id="eindrucke">Eindrücke</h2>
 <p><img alt="IMG-20180114-WA0002.jpg" src="../../images/IMG-20180114-WA0002.jpg" />
 <img alt="IMG-20180114-WA0004.jpg" src="../../images/IMG-20180114-WA0004.jpg" />
@@ -229,8 +234,9 @@
 <li>Kampfergebnis mit Sound- und Bild-/Animationsuntermalung</li>
 <li>Provinzen mit Namen und Abstand zu anderen Provinzen --&gt; neo4j?</li>
 </ul>
+<hr />
 <h1 id="19012018-notizen">19.01.2018 - Notizen</h1>
-<h2 id="zugablauf">Zugablauf</h2>
+<h2 id="zugablauf"><p id="draw_flow">Zugablauf</p></h2>
 <ol>
 <li><em>manuell</em>: Zugstart nach Freigabe durch Spielleiter</li>
 <li><em>automatisch</em>: Kostenkalkulation<ol>
@@ -306,6 +312,108 @@
 <li>Farbe des Spielers in Ecke einblenden</li>
 <li>Anstatt Schulden --&gt; Gold auch in Minusbereich</li>
 <li>Maximale Einheiten pro Provinz --&gt; Konfigurierbar</li>
+</ul>
+<hr />
+<h1 id="28012018-notizen">28.01.2018 - Notizen</h1>
+<h2 id="infrastrukturzustandigkeiten">Infrastruktur|Zuständigkeiten</h2>
+<ul>
+<li>Frontend = Python mit Flask</li>
+<li>Middleware = RabbitMQ</li>
+<li>Backend = Python</li>
+<li>Datenbank = Neo4j</li>
+<li>Logging = Elasticsearch</li>
+<li>Statistiken = ?Relationale Datenbank?</li>
+</ul>
+<h2 id="interaktionen-und-informationen-frontenddesign">Interaktionen und Informationen --&gt; Frontenddesign</h2>
+<h3 id="spieler">Spieler</h3>
+<h4 id="interaktionen">Interaktionen</h4>
+<p>siehe auch <a href="#draw_flow"> Zugablauf</a></p>
+<table>
+    <tr>
+        <th>Interaktion</th>
+        <th>Elemente</th>
+    </tr>
+    <tr>
+        <td>Zugstart</td>
+        <td>Bestätigungsbutton</td>
+    </tr>
+    <tr>
+        <td>Einheitenkauf</td>
+        <td>Auflistung kaufbarer Einheiten mit numerischem Eingabe/Auswahlfeld, Bestätigungsbutton</td>
+    </tr>
+    <tr>
+        <td>Einheiten setzen</td>
+        <td>Auflistung möglicher zu besetzender Felder, Bestätigungsbutton</td>
+    </tr>
+    <tr>
+        <td>Einheitenverkauf</td>
+        <td>Auflistung verkaufbarer Einheiten mit numerischem Eingabe/Auswahlfeld, Bestätigungsbutton</td>
+    </tr>
+    <tr>
+        <td>Einheiten entfernen</td>
+        <td>Auflistung möglicher zu entfernender Felder, Bestätigungsbutton</td>
+    </tr>
+    <tr>
+        <td>Einheiten bewegen</td>
+        <td>Auflistung möglicher Startfelder, Einheitenauswahl, Auflistung möglicher Zielfelder, Bestätigungsbutton</td>
+    </tr>
+    <tr>
+        <td>Kampfsituation</td>
+        <td>Bestätigungsbutton für Würfelwurf (bei PvP = beide Spieler)</td>
+    </tr>
+    <tr>
+        <td>Ereigniskarte</td>
+        <td>Ja/Nein-Möglichkeit, Bestätigungsbutton</td>
+    </tr>
+    <tr>
+        <td>Zugende</td>
+        <td>Bestätigungsbutton</td>
+    </tr>
+</table>
+
+<h4 id="informationen">Informationen</h4>
+<table>
+    <tr>
+        <th>Spielereignis</th>
+        <th>Informationen</th>
+    </tr>
+    <tr>
+        <td>Permanent</td>
+        <td>Zugzeit (wenn vorhanden)</td>
+    </tr>
+    <tr>
+        <td>Start-/Statusübersicht</td>
+        <td>Finanzieller Status, aktuelle Steuern, Einheiten nach Art und Anzahl, Provinzanzahl mit Link auf Provinzübersicht, Landanzahl mit Link auf Landübersicht</td>
+    </tr>
+    <tr>
+        <td>Gegenspieler</td>
+        <td>Provinzen</td>
+    </tr>
+    <tr>
+        <td>Einheitenkauf</td>
+        <td>Reichtumsänderung bei Vorauswahl von Einheiten</td>
+    </tr>
+    <tr>
+        <td>Einheiten setzen</td>
+        <td>Anzahl noch zu setzender Einheiten</td>
+    </tr>
+    <tr>
+        <td>Einheitenverkauf</td>
+        <td>Reichtumsänderung bei Vorauswahl von Einheiten</td>
+    </tr>
+    <tr>
+        <td>Kampfsituation</td>
+        <td>Würfelergebnis, gewonnene/verlorene Provinz, verlorene Einheiten, Kampfergebnis</td>
+    </tr>
+    <tr>
+        <td>Ereigniskarte</td>
+        <td>Ereignistest, Ereignisauswirkungen</td>
+    </tr>
+</table>
+
+<h2 id="randnotizen_2">Randnotizen</h2>
+<ul>
+<li>Spielstände speichern und wiederherstellen</li>
 </ul></div>
         </div>
 

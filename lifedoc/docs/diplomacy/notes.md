@@ -16,6 +16,7 @@
 * feste Runden-/Zugzeit
 
 ## Einheitenübersicht
+
 <table>
     <tr>
 		<th>Einheitentyp</th>
@@ -103,9 +104,11 @@
 * Kampfergebnis mit Sound- und Bild-/Animationsuntermalung
 * Provinzen mit Namen und Abstand zu anderen Provinzen --> neo4j?
 
+* * *
+
 # 19.01.2018 - Notizen
 
-##Zugablauf
+## <p id="draw_flow">Zugablauf</p>
 1. *manuell*: Zugstart nach Freigabe durch Spielleiter
 2. *automatisch*: Kostenkalkulation
 	1. Kalkulation der Steuern anhand der Provinzen, Haupstädte und Weltwunder
@@ -163,3 +166,112 @@
 * Farbe des Spielers in Ecke einblenden
 * Anstatt Schulden --> Gold auch in Minusbereich
 * Maximale Einheiten pro Provinz --> Konfigurierbar
+
+* * *
+
+# 28.01.2018 - Notizen
+
+## Infrastruktur|Zuständigkeiten
+
+* Frontend = Python mit Flask
+* Middleware = RabbitMQ
+* Backend = Python
+* Datenbank = Neo4j
+* Logging = Elasticsearch
+* Statistiken = ?Relationale Datenbank?
+
+## Interaktionen und Informationen --> Frontenddesign
+
+### Spieler
+
+#### Interaktionen
+
+siehe auch <a href="#draw_flow"> Zugablauf</a>
+
+<table>
+    <tr>
+		<th>Interaktion</th>
+		<th>Elemente</th>
+	</tr>
+	<tr>
+        <td>Zugstart</td>
+		<td>Bestätigungsbutton</td>
+    </tr>
+	<tr>
+        <td>Einheitenkauf</td>
+		<td>Auflistung kaufbarer Einheiten mit numerischem Eingabe/Auswahlfeld, Bestätigungsbutton</td>
+    </tr>
+	<tr>
+        <td>Einheiten setzen</td>
+		<td>Auflistung möglicher zu besetzender Felder, Bestätigungsbutton</td>
+    </tr>
+	<tr>
+        <td>Einheitenverkauf</td>
+		<td>Auflistung verkaufbarer Einheiten mit numerischem Eingabe/Auswahlfeld, Bestätigungsbutton</td>
+    </tr>
+	<tr>
+        <td>Einheiten entfernen</td>
+		<td>Auflistung möglicher zu entfernender Felder, Bestätigungsbutton</td>
+    </tr>
+	<tr>
+        <td>Einheiten bewegen</td>
+		<td>Auflistung möglicher Startfelder, Einheitenauswahl, Auflistung möglicher Zielfelder, Bestätigungsbutton</td>
+    </tr>
+	<tr>
+        <td>Kampfsituation</td>
+		<td>Bestätigungsbutton für Würfelwurf (bei PvP = beide Spieler)</td>
+    </tr>
+	<tr>
+        <td>Ereigniskarte</td>
+		<td>Ja/Nein-Möglichkeit, Bestätigungsbutton</td>
+    </tr>
+	<tr>
+        <td>Zugende</td>
+		<td>Bestätigungsbutton</td>
+    </tr>
+</table>
+
+#### Informationen
+
+<table>
+    <tr>
+		<th>Spielereignis</th>
+		<th>Informationen</th>
+	</tr>
+	<tr>
+        <td>Permanent</td>
+		<td>Zugzeit (wenn vorhanden)</td>
+    </tr>
+	<tr>
+        <td>Start-/Statusübersicht</td>
+		<td>Finanzieller Status, aktuelle Steuern, Einheiten nach Art und Anzahl, Provinzanzahl mit Link auf Provinzübersicht, Landanzahl mit Link auf Landübersicht</td>
+    </tr>
+	<tr>
+        <td>Gegenspieler</td>
+		<td>Provinzen</td>
+    </tr>
+	<tr>
+        <td>Einheitenkauf</td>
+		<td>Reichtumsänderung bei Vorauswahl von Einheiten</td>
+    </tr>
+	<tr>
+        <td>Einheiten setzen</td>
+		<td>Anzahl noch zu setzender Einheiten</td>
+    </tr>
+	<tr>
+        <td>Einheitenverkauf</td>
+		<td>Reichtumsänderung bei Vorauswahl von Einheiten</td>
+    </tr>
+	<tr>
+        <td>Kampfsituation</td>
+		<td>Würfelergebnis, gewonnene/verlorene Provinz, verlorene Einheiten, Kampfergebnis</td>
+    </tr>
+	<tr>
+        <td>Ereigniskarte</td>
+		<td>Ereignistest, Ereignisauswirkungen</td>
+    </tr>
+</table>
+
+## Randnotizen
+
+* Spielstände speichern und wiederherstellen
