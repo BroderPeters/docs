@@ -173,6 +173,8 @@
 
 ## Infrastruktur|Zuständigkeiten
 
+* Umgebung Debian 9 mit Docker Images
+* Infrastruktur = Docker, Microservices
 * Frontend = Python mit Flask
 * Middleware = RabbitMQ
 * Backend = Python

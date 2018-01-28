@@ -9,3 +9,4 @@ pages:
          - 'Neo4j': 'informatics/neo4j.md'
      - Setup and Configuration:
          - 'MkDocs': 'setupandconfiguration/mkdocs.md'
+     - Links: links.md
